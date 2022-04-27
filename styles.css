@@ -1,0 +1,213 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow: hidden;
+    background-color: #333333;
+    font-family: 'Gilroy';
+
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@font-face 
+{
+    font-family: 'Gilroy-Light';
+    src: url(source/fonts/Gilroy-Light.otf);
+}
+@font-face 
+{
+    font-family: 'Gilroy-Bold';
+    src: url(source/fonts/Gilroy-Bold.otf);
+}
+
+
+/*  -------------------- Container Section -------------------- */
+
+
+/* Global Container Properties */
+.Container_Global
+{
+    width: 50%;
+
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Linktree Container Properties */
+.Container_Linktree
+{
+    max-width: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+}
+
+
+/*  -------------------- Profile Section -------------------- */
+
+
+/* Profile Container Properties */
+.Section_Profile
+{
+    width: 100%;
+    height: 250px;
+
+    padding: 20px;
+
+    background-color: #4d4d4d;
+}
+
+
+.Container_Profile_Image
+{
+    max-height: 128px;
+    max-width: 128px;
+
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+
+    background-color: white;
+}
+
+
+#Image
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.Container_Name
+{
+    width: 100%;
+    height: 50px;
+
+    margin-top: 15px;
+}
+
+
+#Name
+{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gilroy-Bold';
+
+    text-align: center;
+
+    padding-top: 12px;
+}
+
+
+/*  -------------------- Buttons Section -------------------- */
+
+
+/* Section Container Properties */
+.Section_Content
+{
+    background-color: rgb(61, 61, 61);
+}
+
+
+/*  Buttons Container Properties  */
+.Container_Buttons
+{
+    padding: 25px;
+}
+
+
+/*  Buttons Properties  */
+.Buttons
+{
+    color: white;
+    font-size: 14px;
+    font-family: 'Gilroy-Light';
+
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 4px;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.Buttons:hover
+{
+    font-family: 'Gilroy-Bold';
+    cursor: pointer;
+}
+
+
+/*  Individual Buttons Color  */
+#YouTube
+{
+    background-color: #FF0000;
+}
+#YouTube:hover
+{
+    background-color: #ff5858;
+}
+
+
+#Facebook
+{
+    background-color: #1877F2;
+}
+#Facebook:hover
+{
+    background-color: #4690f1;
+}
+
+
+#Instagram
+{
+    background-color: #e230ad;
+}
+#Instagram:hover
+{
+    background-color: #f563c9;
+}
+
+
+#Twitter
+{
+    background-color: #1DA1F2;
+}
+#Twitter:hover
+{
+    background-color: #5ec1ff;
+}
+
+
+#Reddit
+{
+    background-color: #FF4503;
+}
+#Reddit:hover
+{
+    background-color: #ff8356;
+}
+
+
+#GitHub
+{
+    background-color: #1B1F23;
+}
+#GitHub:hover
+{
+    background-color: #43484e;
+}
