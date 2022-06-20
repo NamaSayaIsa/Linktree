@@ -6,10 +6,23 @@
 }
 body
 {
-    overflow: hidden;
-    background-color: #262626;
+    /* --- Default Page Font --- */
     font-family: 'Gilroy';
 
+
+    /* --- Background Image Properties --- */
+    background-color: #262626;
+
+    background-size: cover;
+    background-image: url("source/images/Gradient Bokeh.png");
+    background-repeat: no-repeat;
+
+
+    /* --- Hide & Disable Scrolling --- */
+    overflow-x: hidden;
+
+
+    /* --- Disable Selecting & Copying --- */
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     -moz-user-select: none;
@@ -28,15 +41,34 @@ body
 }
 
 
+/*  -------------------- Scrollbar Properties -------------------- */
+
+
+body::-webkit-scrollbar
+{
+    width: 5px;
+}
+body::-webkit-scrollbar-track
+{
+    background-color: none;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: #F3F3F3;
+}
+
+
 /*  -------------------- Container Section -------------------- */
 
 
 /* Global Container Properties */
-.Container_Global
+.Container_Positioning
 {
     width: 50%;
 
-    margin-top: 8%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,12 +77,13 @@ body
 /* Linktree Container Properties */
 .Container_Linktree
 {
-    max-width: 400px;
+    width: 400px;
 
     margin-left: auto;
     margin-right: auto;
 
     background-color: white;
+    box-shadow: 0px 0px 8px #666666;
 }
 
 
@@ -60,30 +93,25 @@ body
 /* Profile Container Properties */
 .Section_Profile
 {
-    width: 100%;
-    height: 250px;
-
-    padding: 20px;
-
+    height: 300px;
     background-color: #F3F3F3;
+}
+
+
+.Container_Profile
+{
+    padding: 6%;
 }
 
 
 .Container_Profile_Image
 {
-    max-height: 128px;
-    max-width: 128px;
+    max-height: 200px;
+    max-width: 200px;
 
-    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-
-    border-radius: 50%;
-
-    background-color: #E6E6E6;
 }
-
-
 #Image
 {
     width: 100%;
@@ -95,11 +123,7 @@ body
 {
     width: 100%;
     height: 50px;
-
-    margin-top: 15px;
 }
-
-
 #Name
 {
     color: black;
@@ -116,67 +140,63 @@ body
 
 
 /* Section Container Properties */
-.Section_Content
+.Section_Buttons
 {
-    background-color: #dadada;
-}
-
-
-/*  Buttons Container Properties  */
-.Container_Buttons
-{
-    padding: 25px;
+    background-color: #e0e0e0;
 }
 
 
 /*  Buttons Properties  */
 .Buttons
 {
-    color: black;
+    color: white;
     font-size: 14px;
     font-family: 'Gilroy-Light';
 
     width: 100%;
-    height: 35px;
+    height: 100px;
 
     border: none;
-    border-radius: 4px;
+    border-top: 1px solid #4d4d4d;
 
-    margin-top: 8px;
-    margin-bottom: 8px;
-
-    background-color: #F3F3F3;
+    background-color: #262626;
 }
 .Buttons:hover
 {
-    color: white;
-    font-family: 'Gilroy-Bold';
     cursor: pointer;
+    font-family: 'Gilroy-Bold';
 }
 
 
 /*  Individual Buttons Color  */
 #YouTube:hover
 {
+    transition: 0.2s;
     background-color: #FF0000;
 }
 #Facebook:hover
 {
+    transition: 0.2s;
     background-color: #1877F2;
 }
 #Instagram:hover
 {
-    background-color: #e940b6;
+    transition: 0.2s;
+    background-color: #fa4599;
 }
 #Twitter:hover
 {
+    transition: 0.2s;
     background-color: #1DA1F2;
 }
 #Reddit:hover
 {
+    transition: 0.2s;
     background-color: #FF4503;
 }
-#GitHub:hover
+#TikTok:hover
 {
-    background-color: #1B1F23;
+    color: black;
+    transition: 0.2s;
+    background-color: white;
 }
